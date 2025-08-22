@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #eafaf1; 
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 600px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2f6f47;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input[type="text"],
+.form input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #a3d9a5;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76,175,80,0.3);
+}
+
+.form button {
+  background: #6ccf77;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.form button:hover {
+  background: #58b868;
+  transform: scale(1.1);
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#Filter {
+  background: #c8f0d2;
+  color: #2f6f47;
+}
+
+#Deleteall {
+  background: #f28585;
+  color: white;
+}
+
+#Filter:hover {
+  background: #a6e6b5;
+  transform: translateY(-2px);
+}
+
+#Deleteall:hover {
+  background: #e06666;
+  transform: translateY(-2px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background: #6ccf77;
+  color: white;
+}
+
+thead th {
+  padding: 12px;
+  font-size: 14px;
+}
+
+tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+  background: #f4fff6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
